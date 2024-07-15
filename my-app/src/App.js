@@ -11,8 +11,7 @@ import {
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import ProtectedRoute from './Components/ProtectedRoute';
-
- 
+// blah bla
 
 function App() {
 
