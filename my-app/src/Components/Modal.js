@@ -10,10 +10,7 @@ const Modaling = ({ open, onClose, editIsClicked, updateObject }) => {
     }
   }, [open, editIsClicked, updateObject]);
 
-  const handleSubmit = () => {
-    console.log("Hello");
-    onClose();
-  };
+ 
 
   return (
     <div>
