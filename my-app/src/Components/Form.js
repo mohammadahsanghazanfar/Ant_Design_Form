@@ -39,7 +39,7 @@ const MyForm = ({ object, editIsClicked }) => {
         role: values.role,
         department: values.department
       };
-       console.log(obj)
+       console.log("hello")
      Modal.confirm({
       title:"Confirm Submission",
       content:"Are you sure to submit data",
