@@ -30,7 +30,7 @@ const MyForm = ({ object, editIsClicked }) => {
   const formik = useFormik({
     initialValues: editIsClicked && object ? object :initialValues,
     validationSchema,
-    enableReinitialize:true,
+    enableReinitialize:true,     
     onSubmit: (values) => {
       let obj = {
         id: "user" + "_" + Id,
@@ -39,6 +39,7 @@ const MyForm = ({ object, editIsClicked }) => {
         role: values.role,
         department: values.department
       };
+       console.log(obj)
      Modal.confirm({
       title:"Confirm Submission",
       content:"Are you sure to submit data",
