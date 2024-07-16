@@ -57,7 +57,6 @@ const LoginForm = ({ checkLogin }) => {
       <Form.Item 
       label='Password' 
       name='password'
-      rules={[yupSync]}
        style={{ marginBottom: '30px' }}>
         <Input.Password
           name='password'

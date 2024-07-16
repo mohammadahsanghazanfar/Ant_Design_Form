@@ -66,7 +66,17 @@ const MyForm = ({ object, editIsClicked }) => {
       role: formik.values.role,
       department: formik.values.department
     };
-     dispatch(userActions.update(obj))
+    Modal.confirm({
+      title:"Confirm Update",
+      content:"Are you sure to Update data",
+      okText:"Yes",
+      cancelText:"No",
+      onOk(){
+         dispatch(userActions.update(obj))
+      }
+
+
+    })
   };
 
   return (
